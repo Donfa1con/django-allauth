@@ -34,7 +34,6 @@ class VKProvider(OAuth2Provider):
         scope = []
         if app_settings.QUERY_EMAIL:
             scope.append('email')
-            scope.append('offline')
         return scope
 
     def extract_uid(self, data):
